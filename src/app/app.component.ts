@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-bootcamp';
+  count = 100;
+
+  increment(){
+    this.count = this.count + 1;
+  }
+
+  decrement(){
+    this.count = this.count - 1;
+  }
+
 }
