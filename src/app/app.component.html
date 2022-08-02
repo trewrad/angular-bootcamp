@@ -1,7 +1,17 @@
 <div class="container">
-  <div>
+  <!-- <div>
     <button (click)="increment()">Increment</button>
     <button (click)="decrement()">Decrement</button>
-  </div>
+    </div>
+  <input type="text" [(ngModel)]="twoWayDataBinding">
   {{count}}
+  -->
+  <input type="text" name="task" [(ngModel)]="task">
+  <div>
+    <button (click)="addTask(task)">Add Task</button>
   </div>
+
+    <ng-container *ngFor= "let tasks of task_list">
+    <ul>
+      <li>{{tasks}}</li>
+    </ul>
